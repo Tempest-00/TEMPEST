@@ -1,0 +1,50 @@
+.styled {
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: #FFF;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 3px;
+    background-color: green;
+    background-image: linear-gradient(to top left,
+                                      rgba(0, 0, 0, .2),
+                                      rgba(0, 0, 0, .2) 30%,
+                                      rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                inset -2px -2px 3px rgba(0, 0, 0, .6);
+}
+
+.styled:hover {
+    background-color: lime;
+}
+
+.styled:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+                inset 2px 2px 3px rgba(0, 0, 0, .6);
+}
+body {
+    background-color: #6eddf8;
+}
+
+#Banner {
+    color: black;
+    width: 550px;
+    background-color: green;
+    padding: 20px 300px 10px 10px;
+    border-radius: 20px;
+    border-width: 10px;
+    border-color:rgba(33, 85, 23, 0.76);
+    border-style: outset;
+    font-family: 'Cinzel', 'courier';
+    font-size: 70px;
+    text-shadow: 3px 3px 3px rgba(37, 75, 36, 0.877);
+    text-align: center;
+}
+#portrait {
+    height: 220px;
+    position: absolute;
+    top: 3.45em;
+    left: 38em;
+}
