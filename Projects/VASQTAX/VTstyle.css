@@ -1,8 +1,12 @@
+nav {
+    margin-left: auto;
+    margin-right: 0px;
+}
+
 .Banner {
-    color: rgb(128, 245, 112);
+    color: rgb(130, 250, 114);
     margin-left: 1rem;
     margin-top: 0px;
-    margin-right: ;
     padding: 0 0 0 0.2em;
     width: 20em;
     background-color: green;
@@ -16,16 +20,35 @@
     text-align: left;
     line-height: 0px;
 }
+#BannInfo {
+    position: absolute; 
+    top: -0.8rem; 
+    left: 61rem; 
+    font-size: 40px; 
+    font-weight: 500;
+    width: 30rem;
+    line-height: 2.2rem;
+    text-align: center;
+}
 #portrait {
     height: 1.4em;
-    position: absolute;
+    position: fixed;
     top: 9px;
     left: 5.2em;
     z-index: 2;
 }
+#filebutton {
+    width:25.3rem;
+    padding: 0.3rem 8.5rem;
+    position: absolute;
+    top: 0.5em; 
+    left: 62.8em;
+}
 .button {
+    width:12.5rem;
+    height:4rem;
     border: 0;
-    line-height: 2.5;
+    line-height: 1;
     font-size: 24px;
     font-weight: 700;
     text-align: center;
@@ -42,15 +65,17 @@
 }
 
 .button:active {
-    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+    box-shadow: inset -2px -2px 3px rgba(139, 139, 139, 0.6),
                 inset 2px 2px 3px rgba(0, 0, 0, .6);
 }
 
 .button:hover {
-    background-color: lime;
+    background-color: rgb(93, 238, 93);
 }
- 
+
 body {
     background-color: #0ba11f5e;
     font-size: 12px;
 }
+
+h2 {font-size:20px;} 
