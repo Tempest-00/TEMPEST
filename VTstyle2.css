@@ -1,0 +1,113 @@
+body {
+  background-color: #d2e5ce;
+  font-family: 'monospace';
+}
+
+#BannerText{
+  position:relative;
+  font-family: 'Cinzel', 'monospace';
+  color: black;
+  text-shadow: 1px 1px 3px #005000;
+  line-height: 16px;
+}
+h1 {
+  font-size: 120px;
+}
+#BannerText h1{
+  position: relative; top: 50px;
+  color: green;
+  text-shadow: 2px 2px 3px black;
+  margin-top: 0px;
+  margin-left: 65px;
+}
+h2{
+  font-weight: 800;
+  line-height: 10px;
+}
+h3 {
+  font-size:44px;
+}
+#BannerText h3{
+  color: green;
+  text-shadow: 2px 2px 3px black;
+  margin-top: 98px;
+  margin-left: 98px;
+  margin-bottom: 15px;
+}
+p{
+  font-size: 12px;
+}
+#BannerText p{
+  color: green;
+  font-size: 28px;
+  line-height: 28px;
+  position: absolute; top: -24px; right: 130px;
+  text-align: center;
+}
+
+#BannerPattern{
+  position: relative;
+  width: 70%;
+  border-style: ridge;
+  border-width: 10px;
+  border-color: #cca42b;
+  border-radius: 10px;
+  background-color: beige;
+  margin: auto;
+}
+#BannerPattern::before {
+  content: "";
+  background-image: url('https://i.ibb.co/mRN2ZdS/geo-Diamons.jpg');
+  opacity: 0.4;
+  background-size: 10%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+}
+
+#BannerPortrait {
+  width:130px;
+  position:absolute; bottom: -16px; left:700px;
+}
+
+.navbar {
+  background-color: #444444;
+}
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #060;
+  border-radius:10px;
+  border-style:solid;
+  border-color: silver;
+  border-width: 2px
+}
+.navbar li {
+  float:left;
+  font-size:24px;
+}
+.navbar li a {
+  display: block;
+  color: white;
+  text-shadow: 2px 2px 2px black;
+  text-align: center;
+  padding: 8px 40px;
+  text-decoration: none;
+ /* border-radius:10px;
+  border-width:1px;
+  border-style: solid;
+  border-color: grey;
+  background-color: #0A0;
+  margin-right:1px;
+  margin-left:1px; */
+}
+.navbar li a:hover {
+  background-color: #3ABa3A;
+}
+.navbar li a:active {
+  box-shadow:inset 2px 2px 10px #363, -2px -2px 5px #363;
+}
