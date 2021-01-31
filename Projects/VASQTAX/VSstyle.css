@@ -1,0 +1,63 @@
+:root {
+    --clr-text: #99f59f;
+    --clr-primary: #092c1e;
+    --clr-accent: #eec984;
+
+    --ff-logo: "Cinzel", monospace;
+    --ff-title: "Merriweather", sans-serif;
+    --ff-serif: "Merriweather Sans", sans-serif;
+}
+
+html {
+    font-family: var(--ff-serif);
+    background-color: var(--clr-primary);
+    color: var(--clr-text);
+    font-size: 1.125rem;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+/* Typography */
+
+.header-logo {
+    font-family: var(--ff-logo);
+    font-size: 30px;
+    display: inline-block;
+    width: 300px;
+}
+
+.jumbo-title {
+    font-family: var(--ff-title);
+}
+
+h1, h2, h3, h4, p{
+    margin: 0;
+}
+
+h2, h3{
+    font-family: var(--ff-title);
+    line-height: 1.2;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+p {
+    margin-bottom: .75em;
+}
+
+/* Navigation bar*/
+
+nav ul {
+    display: flex;
+}
+
+/* Buttons */
+
+
+/* Homepage Styles */
+
