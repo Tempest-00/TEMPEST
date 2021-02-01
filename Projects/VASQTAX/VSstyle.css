@@ -1,6 +1,7 @@
 :root {
     --clr-text: #99f59f;
-    --clr-primary: #092c1e;
+    --clr-back: #092c1e;
+    --clr-primary:#125732;
     --clr-accent: #eec984;
 
     --ff-logo: "Cinzel", monospace;
@@ -10,14 +11,22 @@
 
 html {
     font-family: var(--ff-serif);
-    background-color: var(--clr-primary);
+    background-color: #092c1e;
     color: var(--clr-text);
     font-size: 1.125rem;
+    text-align: center;
+}
+body {
+    margin: 0;
 }
 
 img {
     display: block;
     max-width: 100%;
+}
+
+section {
+    padding: 2em 0.6em;
 }
 
 /* Typography */
@@ -29,7 +38,7 @@ img {
     width: 300px;
 }
 
-.jumbo-title {
+.hero-title {
     font-family: var(--ff-title);
 }
 
@@ -52,12 +61,98 @@ p {
 
 /* Navigation bar*/
 
+header {
+    padding: 1em 0 2em;
+}
+
 nav ul {
     display: flex;
+    list-style: none;
+    font-size: 12px;
+    margin-left: -45px;
+    text-align: center;
 }
+
+nav a {
+    display: inline-block;
+    padding: .5em;
+    color: var(--clr-accent);
+    background-color: var(--clr-primary);
+    text-decoration: none;
+}
+    nav a:hover,
+    nav a:focus {
+        text-decoration: underline;
+        background-color: seagreen;
+    }
 
 /* Buttons */
 
 
 /* Homepage Styles */
 
+.top-banner {
+    padding: 0 1em;
+    text-align: center;
+    font-size: 14px;
+    line-height: 0.9;
+}
+.header-p {
+    display: none;
+}
+.notice {
+    background-color: black;
+    font-size: 14px;
+    padding: 0.5vh 3vw;
+}
+        /* Hero Section */
+.hero {
+    padding: 0;
+}
+.hero-title {
+    background-color: #125732;
+    background-image: url(/Projects/VASQTAX/imgs/building.PNG);
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+    /* background-image: linear-gradient(
+        var(--clr-back) 0%,
+        var(--clr-primary) 40%, 
+        var(--clr-primary) 70%, 
+        var(--clr-back) 100% ); */ ;
+    text-align: center;
+    font-family: var(--ff-title);
+    padding: 7vh 0.3vw;
+    text-shadow: 2px 2px 2px black;
+}
+
+hr {
+    color: var(--clr-text);
+    width: 20vw;
+}
+
+        /* Our Services Section */
+
+.service {
+    background-color: var(--clr-primary);
+    padding: 0 0 10px;
+    margin: 5px;
+    border-radius: 15%;
+    width: 44vw;
+    height: 44vw;
+    float: left;
+}
+.serv-img {
+    min-width: 20%;
+    max-width: 65%;
+    display: inline-block;
+    padding: 10px 0 0 0;
+}
+
+        /* About Us Section */
+
+.abt-article1 {
+    background: var(--clr-accent);
+    color: black;
+    display: flex;
+    flex-direction: column;
+}
