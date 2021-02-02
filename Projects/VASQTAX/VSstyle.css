@@ -28,7 +28,13 @@ img {
 section {
     padding: 2em 0.6em;
 }
+.section-title {
+    font-family: var(--ff-title);
+}
 
+a {
+    text-decoration: none;
+}
 /* Typography */
 
 .header-logo {
@@ -90,25 +96,8 @@ nav a {
 
 /* Buttons */
 
-.serv-btn{
-    background-color: var(--clr-text);
-    width: 100%;
-    height: 34px;
-    display: flex;
-    border-radius: 0 0 20px 20px;
-    justify-content: center;
-}
 
-.btn, .btn2{
-    padding: 3px 0px 3px;
-    color:black;
-    text-decoration: none;
-    line-height: 1em;
-}
-.btn2{
-    padding-top: 10px;
-    height: 27px;
-}
+
 
 
 /* Homepage Styles */
@@ -159,9 +148,11 @@ hr {
     grid-template-columns: 1fr 1fr;
 }
 .service {
+    display: flex;
+    flex-direction: column;
     background-color: #7eca85;
     padding: 0 0 3px;
-    margin: 5px;
+    margin: 5px auto;
     border-radius: 15%;
     border: 3px solid lightgreen;
     width: 40vw;
@@ -172,15 +163,17 @@ hr {
 .serv-img {
     min-width: 20%;
     max-width: 65%;
-    display: inline-block;
-    padding: 10px 0 0 0;
+    display: block;
+    padding: 8px 0 0 0;
+    margin:  0 auto;
 }
-
+.service h4 {
+    color: black;
+}
         /* About Us Section */
 
 .about-us {
-    background: var(--clr-accent);
-    color: black;
+    background: var(--clr-back);
     display: flex;
     flex-direction: column;
 }
