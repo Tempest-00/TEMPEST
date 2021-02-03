@@ -33,7 +33,7 @@
     <p class="notice">Notice: <br>
         Due to Covid-19 restrictions, all filings will be made through
             distance work, or through scheduled appointment, unless stated otherwise. <br>
-             &nbsp &nbsp Thank you for your patience.</p>
+            Thank you for your patience.</p>
 <main>
    <section class="hero">
        <header class="hero-text">
@@ -54,22 +54,30 @@
            <h2 class="section-title">Our Services</h2>
        </header>
        <div class="serv-grid">
+
+        <a href="#" class="btn2 serv-btn">
+          <div class="service">  
+            <img src="/Projects/VASQTAX/icons/Taxes.svg" alt="" class="serv-img">
+              <h4>Tax Preparations</h4>
+          </div> </a>
+
+          <a href="#" class="btn2 serv-btn">
           <div class="service">
-              <img src="/Projects/VASQTAX/icons/Taxes.svg" alt="" class="serv-img">
-              <h4><a href="#" class="btn2 serv-btn">Tax Preparations</a></h4>
-          </div>
+            <img src="/Projects/VASQTAX/icons/Notarizations.svg" alt="" class="serv-img">
+              <h4>Notarizations</h4>
+          </div> </a>
+          
+          <a href="#" class="btn2 serv-btn">
           <div class="service">
-              <img src="/Projects/VASQTAX/icons/Notarizations.svg" alt="" class="serv-img">
-              <h4><a href="#" class="btn2 serv-btn">Notarizations</a></h4>
-          </div>
+            <img src="/Projects/VASQTAX/icons/Translations.svg" alt="" class="serv-img">
+              <h4>Translations</h4>
+          </div> </a>
+          
+          <a href="#" class="btn serv-btn">
           <div class="service">
-              <img src="/Projects/VASQTAX/icons/Translations.svg" alt="" class="serv-img">
-              <h4><a href="#" class="btn2 serv-btn">Translations</a></h4>
-          </div>
-          <div class="service">
-              <img src="/Projects/VASQTAX/icons/Immigration.svg" alt="" class="serv-img">
-              <h4><a href="#" class="btn serv-btn">Immigration Papers</a></h4>
-          </div>
+            <img src="/Projects/VASQTAX/icons/Immigration.svg" alt="" class="serv-img">
+              <h4>Immigration Papers</h4>
+          </div> </a>
         </div>
         <p>And various other services as well, inquire with us,
              or <a href="#">click here</a> to find out more.</p>
@@ -86,7 +94,7 @@
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit harum tenetur reiciendis. Inventore blanditiis magnam natus labore repudiandae a. Deserunt quos voluptatibus expedita consectetur sapiente dolor fuga quia adipisci veritatis.</p> </div>
         </div>
         <div class="abt-article2">
-            <img class="abt-building;0" src="/Projects/VASQTAX/imgs/building.PNG" alt="">
+            <img class="abt-building" src="/Projects/VASQTAX/imgs/building.PNG" alt="">
             <h3>Where we are</h3>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur iusto illum ad beatae laboriosam voluptatem atque sit fugiat perspiciatis eos eveniet, adipisci consectetur ut, laborum accusamus aspernatur quis mollitia. Nam?</p>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet alias distinctio quis praesentium ipsam, earum aut vel beatae culpa aliquid hic et soluta cumque maiores dicta illo! Debitis, molestias? Impedit.</p>
@@ -94,9 +102,29 @@
    </section>
 
    <section  id="contact-form" class="Contact-us">
-        <header>
-            <h2 class="section-title">Contact Us</h2>
-        </header>
+      <header>
+        <h2 class="section-title">Contact Us</h2>
+      </header>
+      <p>Feel free to inquire with us, we respond to all messages during normal business hours.</p>
+      <p><em>Fields marked with an asterisk (*) are required</em></p>
+    <div class="form-container">
+      <form id="inquiry-form" name="contact" data-name="Contact Form" action="">
+        <div class="contact-form-grid">
+          <div id="contact-block"><label for="First Name" id="contact-first-name">First Name *</label><input type="text" class="contact-input" maxlength="256" name="First-Name" data-name="First Name" id="First-Name" required=""></div>
+          <div id="contact-block"><label for="Last Name" id="contact-last-name">Last Name *</label><input type="text" class="contact-input" maxlength="256" name="Last-Name" data-name="Last Name" id="Last-Name" required=""></div>
+          <div id="contact-block"><label for="Email" id="contact-email">Email *</label><input type="email" class="contact-input" maxlength="256" name="Email" data-name="Email" id="Email" required=""></div>
+          <div id="contact-block"><label for="Phone number" id="contact-phone">Phone number</label><input type="tel" class="contact-input" maxlength="256" name="Contact-Phone-Number" data-name="Contact Phone Number" id="Contact-Phone-Number"></div>
+          <div id="contact-block"><label for="Message" id="contact-message">Message *</label><textarea  data-name="Message" maxlength="5000" id="Message" name="Message" class="contact-input"></textarea></div>
+        </div><input type="submit" value="Submit" data-wait="Please wait..." class="submit-button">
+      </form>
+      <div class="contact-form-done">
+        <div> Thank you! Your submission has been recieved!</div>
+      </div>
+      <div class="contact-form-fail">
+        <div>Something went wrong while submitting the form. Please try again.</div>
+      </div>
+    </div>
+          <!--<input type="text" class="contact-input" maxlength="256" name="" data-name="" id="" required=""></div> -->
    </section>
 
    <footer>
