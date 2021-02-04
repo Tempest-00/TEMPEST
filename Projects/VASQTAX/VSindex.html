@@ -78,6 +78,11 @@
             <img src="/Projects/VASQTAX/icons/Immigration.svg" alt="" class="serv-img">
               <h4>Immigration Papers</h4>
           </div> </a>
+
+          <a href="#" class="btn serv-btn">
+            <div class="service serv-all">
+                <h4>See all our services</h4>
+            </div> </a>
         </div>
         <p>And various other services as well, inquire with us,
              or <a href="#">click here</a> to find out more.</p>
@@ -90,8 +95,8 @@
         <div class="abt-article1">
             <img  class="abt-portrait" src="/Projects/VASQTAX/imgs/portraitsquare.png" alt="Portrait of Mario Vasquez">
             <div><h3>Who we are</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt quas mollitia quaerat nemo fugiat ipsa, dolore, in maxime autem harum impedit quidem, culpa fuga at nostrum saepe soluta? Eius, nulla?</p>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit harum tenetur reiciendis. Inventore blanditiis magnam natus labore repudiandae a. Deserunt quos voluptatibus expedita consectetur sapiente dolor fuga quia adipisci veritatis.</p> </div>
+            <p>Mario Vasquez, the owner of Vasquez Services, has been serving the populus for over 20 years. Highly experienced and thorough with every tax filing, translation, or financial advisory, a staple point of Mario's work method is to make sure each client is personally taken care of.</p>
+            <p>Mario, with a masters of national finances, an engineer, and long-time business owner.</p> </div>
         </div>
         <div class="abt-article2">
             <img class="abt-building" src="/Projects/VASQTAX/imgs/building.PNG" alt="">
@@ -101,21 +106,38 @@
         </div>
    </section>
 
-   <section  id="contact-form" class="Contact-us">
+   <section  id="contact" class="contact-us">
       <header>
         <h2 class="section-title">Contact Us</h2>
       </header>
       <p>Feel free to inquire with us, we respond to all messages during normal business hours.</p>
       <p><em>Fields marked with an asterisk (*) are required</em></p>
     <div class="form-container">
-      <form id="inquiry-form" name="contact" data-name="Contact Form" action="">
+      <form id="contact-form" name="contact" data-name="Contact Form"  method="GET" action="VSformresults.html">
         <div class="contact-form-grid">
-          <div id="contact-block"><label for="First Name" id="contact-first-name">First Name *</label><input type="text" class="contact-input" maxlength="256" name="First-Name" data-name="First Name" id="First-Name" required=""></div>
-          <div id="contact-block"><label for="Last Name" id="contact-last-name">Last Name *</label><input type="text" class="contact-input" maxlength="256" name="Last-Name" data-name="Last Name" id="Last-Name" required=""></div>
-          <div id="contact-block"><label for="Email" id="contact-email">Email *</label><input type="email" class="contact-input" maxlength="256" name="Email" data-name="Email" id="Email" required=""></div>
-          <div id="contact-block"><label for="Phone number" id="contact-phone">Phone number</label><input type="tel" class="contact-input" maxlength="256" name="Contact-Phone-Number" data-name="Contact Phone Number" id="Contact-Phone-Number"></div>
-          <div id="contact-block"><label for="Message" id="contact-message">Message *</label><textarea  data-name="Message" maxlength="5000" id="Message" name="Message" class="contact-input"></textarea></div>
-        </div><input type="submit" value="Submit" data-wait="Please wait..." class="submit-button">
+          <div id="contact-block">
+            <label for="first-name">First Name *</label>
+            <input type="text" class="contact-input" name="first-name" data-name="First Name" id="first-name" required="">
+          </div>
+          <div id="contact-block">
+            <label for="last-name">Last Name *</label>
+            <input type="text" class="contact-input" name="last-name" data-name="Last Name" id="last-name" required="">
+          </div>
+          <div id="contact-block">
+            <label for="email">Email *</label>
+            <input type="email" class="contact-input" name="email" data-name="Email" id="email" placeholder="Ex. VasquezServices@pm.me" required="">
+          </div>
+          <div id="contact-block">
+            <label for="phonenumber">Phone number</label>
+            <input type="tel" class="contact-input" name="phonenumber" data-name="Contact Phone Number" id="phonenumber"  placeholder="Ex. (781)-599-8877" pattern="[0-9]{3}-{0-9}{3}-[0-9]{4}">
+          </div>
+          <div id="contact-block">
+            <label for="message">Message *</label>
+            <textarea data-name="Message" id="message" name="message" class="contact-input" placeholder="Ask any questions here."></textarea>
+          </div>
+        </div>
+        <input type="submit" value="Submit" data-wait="Please wait..." class="submit-button">
+        <input type="reset" value="Reset" class="reset-button">
       </form>
       <div class="contact-form-done">
         <div> Thank you! Your submission has been recieved!</div>
