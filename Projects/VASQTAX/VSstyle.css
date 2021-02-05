@@ -37,6 +37,8 @@ section {
     color: var(--clr-accent);
     border-radius: 10px;
     border: 2px solid var(--clr-accent2);
+    width: 335px;
+    margin: auto;
 }
 
 a {
@@ -56,7 +58,7 @@ a {
 }
 
 h1, h2, h3, h4, p{
-    margin: 0;
+    margin: 0 10px;
 }
 
 h2, h3{
@@ -158,17 +160,21 @@ hr {
 .serv-grid{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-column-gap: 1em;
+    grid-row-gap: 1em;
 }
 .service {
     display: flex;
     flex-direction: column;
     background-color: #7eca85;
     padding: 0;
-    margin: 5px auto;
+    margin: auto;
     border-radius: 15%;
     border: 3px solid lightgreen;
-    width: 40vw;
-    height: 40vw;
+    width: 100%;
+    max-width: 450px;
+    height: 45vw;
+    max-height: 450px;
     justify-content: center;
     font-size: 16px;
     box-shadow: 0 0 1em rgba(0, 0, 0, 0.5);
@@ -184,7 +190,7 @@ hr {
     margin:  0 auto;
 }
 .serv-all {
-    width: ;
+    width: 2fr;
 }
 .service h4 {
     color: black;
@@ -203,21 +209,31 @@ hr {
     justify-content: center;
 }
 .about-us h3{
-    padding-top: 20px;
+    padding: 20px 0 8px;
 }
 
-.abt-article1{
+.abt-article1,
+.abt-article2 {
     margin: 0;
-    padding-bottom: 50px;
+    padding-bottom: 10px;
     text-indent: 5vw;
-}
+}                       .abt-article1 h3, .abt-article2 h3{text-indent:0; text-align: center;}
+                        .abt-article1 p, .abt-article2 p {text-align: center; padding: 10px;}
 .abt-portrait {
     border-radius: 50%;
     margin: auto;
-    max-width: 340px;
+    width: 100%;
+    height: auto;
+    max-width: 400px;
 }
-.abt-article1-text,
 
+.abt-office {
+    border-radius:5px;
+    margin: auto;
+    width: 100%;
+    height: auto;
+    max-width: 550px;
+}
 
 
 
@@ -246,9 +262,13 @@ hr {
     -ms-grid-row-span: 1;
     grid-row-end: span 1;   
 } */
+
+#contact p {margin:auto}
+
 #contact-form {
     text-align: left;
-    max-width: 80vw;
+    width: 70%;
+    max-width: 900px;
     margin:  1rem auto;
     border: 2px solid;
     padding: 2rem;
@@ -278,5 +298,39 @@ input, textarea {
 
 footer {
     background-color: black;
-    padding-top: 4vh;
+    COLOR: white;
+    padding: 3em 0em;
+    display: flex;
+    justify-content:space-evenly ;
 }
+footer p {
+}
+
+.footer-nav,
+.footer-social {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+    .footer-nav a {
+         color: inherit;
+         padding: 0.5em;
+         text-decoration: none;
+    }
+    .footer-nav a:hover{
+        text-decoration: underline;
+    }
+.list-item {
+    padding: 0.7em 0 0.7em;
+}
+
+
+    .footer-social a{
+        color: inherit;
+}
+.social-link {}
+
+.footer-icon {
+    width: 4em;
+    margin: 2.6em 0;
+}                   
