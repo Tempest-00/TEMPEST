@@ -1,5 +1,5 @@
 :root {
-    --clr-text: #99f59f;
+    --clr-text: #bcf0c0;
     --clr-back: #051a11;
     --clr-primary:#125732;
     --clr-accent: #f8db7b;
@@ -29,7 +29,7 @@ img {
 }
 
 section {
-    padding: 2em 0.6em;
+    padding: 80px 0.6em;
 }
 .section-title {
     font-family: var(--ff-title);
@@ -249,10 +249,10 @@ footer p {
                                 /* Hero Section */
 .hero {
     background-color: var(--clr-primary);
-    background-image: url(/Projects/VASQTAX/imgs/list2.jpg);
+    background-image: url(/Projects/VASQTAX/imgs/diamonds.jpg);
     background-blend-mode: multiply;
     background-attachment: fixed;
-    background-size: cover;
+    background-size: contain;
     text-align: center;
     font-family: var(--ff-title);
     padding: 7vh 0.3vw;
@@ -358,16 +358,21 @@ footer p {
 }
 @media only screen and (min-width: 1080px){
     .services{
-        max-width: 1400px;
+        max-width: 1080px;
         margin: auto;
     }
 
     .serv-grid{
-        max-width: 1400px;
+        max-width: 1080px;
+    }
+    .service{
+        width: 220px;
+        height: 220px;
     }
 
     .service h4{
         padding-top: 6%;
+        font-size: x-large;
     }
 }
 
@@ -403,7 +408,7 @@ footer p {
     margin: auto;
     width: 100%;
     height: auto;
-    max-width: 400px;
+    max-width: 350px;
 }
 
 .abt-office {
