@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;0,900;1,400;1,700&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://kit.fontawesome.com/4cdb936a52.js"></script>
 </head>
 <body>
 
@@ -24,13 +24,13 @@
     <!--<label for="" class="logo">Vasquez Services</label>-->
     <a href="index.html" class="logo-link"><img class= "header-logo" src="/Projects/VASQTAX/icons/Logo.png" alt="Vasquez Services, 781-599-8877"> </a>
     <ul>
-        <li><a href="apply.html">Apply To File!</a></li>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="forms.html">Forms</a></li>
-        <li><a href="FAQ.html">FAQ</a></li>
-        <li><a href="index.html#contact">Contact</a></li>
+        <a href="apply.html"><li>Apply To File!</li></a>
+        <a href="index.html"><li>Home</li></a>
+        <a href="services.html"><li>Services</li></a>
+        <a href="#about"><li>About</li></a>
+        <a href="forms.html"><li>Forms</li></a>
+        <a href="FAQ.html"><li>FAQ</li></a>
+        <a href="index.html#contact"><li>Contact</li></a>
     </ul>
 </nav>
     <p class="notice">Notice: <br>
@@ -39,17 +39,21 @@
             Thank you for your patience.</p>
 <main>
    <section class="hero">
-       <header class="hero-text">
+      <div class="hero-left"><header class="hero-text">
            <h1 class="hero-title">Personal Tax Filings, <br>with experienced people.</h1>
         </header>
             <div class="hero-p-container">
                 <div class="greenlines"> <hr> <hr> </div>
-                <p class="hero-p"> Vasquez Services has been serving clients for 20 years. Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quis, ratione exercitationem in necessitatibus ullam, nulla id deleniti ipsum minus laudantium dolore commodi sed optio, voluptas doloribus harum officiis? Eaque!</p>
+                <p class="hero-p"> <img  class="hero-portrait-p" src="/Projects/VASQTAX/imgs/portraitsquare.png" alt="Portrait of Mario Vasquez" align="right">We at Vasquez Services has been serving our clients for 20 years! Prioritizing in filing Tax Returns for the public, Vasquez Services was started from grassroots, popularied by word of mouth, and built by earning the trust of our clients. <br> Serving clients locally, as well as nationally, distance is not a problem with Mario as your Tax Expert, because with us, every tax filing has an individual behind it.</p>
             </div>
+      </div>
+      <div class="hero-right">
+        <img  class="hero-portrait" src="/Projects/VASQTAX/imgs/portraitsquare.png" align="right" alt="Portrait of Mario Vasquez"> Mario Vasquez ~ Owner
+      </div>
        <!--<div class="herotron__hero-portrait"> 
            <img src="/Projects/VASQTAX/imgs/portraitsquare.png" alt="portrait of mario vasquez">
            <h4>Mario Vasquez-Owner</h4> -->
-       </div>
+      
    </section>
 
    <section id="services" class="services">
@@ -92,19 +96,24 @@
         <header>
             <h2 class="section-title"> About Us</h2>
         </header>
-        <div class="abt-article1">
+       <!-- <div class="abt-article1">
             <img  class="abt-portrait" src="/Projects/VASQTAX/imgs/portraitsquare.png" alt="Portrait of Mario Vasquez">
             <div><h3>Who we are</h3>
             <p>Mario Vasquez, the owner of Vasquez Services, has been serving the populus for over 20 years. Highly experienced and thorough with every tax filing, translation, or financial advisory, a staple point of Mario's work method is to make sure each client is personally taken care of.</p> 
             <br>
             <p>Mario, with a masters of national finances, an engineer, and long-time business owner.</p> </div>
-        </div>
+        </div> -->
         <div class="abt-article2">
             <img class="abt-office" src="/Projects/VASQTAX/imgs/building.PNG" alt="">
-            <div><h3>Where we are</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur iusto illum ad beatae laboriosam voluptatem atque sit fugiat perspiciatis eos eveniet, adipisci consectetur ut, laborum accusamus aspernatur quis mollitia. Nam?</p>
+            <div><h3>Who we are</h3>
+              <p>A family-run business, with Mario Vasquez as the head and Tax Expert, 
+              Vasquez Services was opened for the first time in the year 2000, in the same location it is now! <br> <br> From that point, Vasquez Services has only grown, thanks to the trust of our communities, built over 20 years of dedicated service to help each individual get the highest possible value with their taxes.  </p> <br>
+              
+              <h3>Where we are</h3>
+            <p style="text-align: center; text-indent: 0%; font-size: 22px; text-decoration: underline;"> <em> Vasquez Services is located at 620 Boston Street, Lynn MA 01905. </em></p>
             <br>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet alias distinctio quis praesentium ipsam, earum aut vel beatae culpa aliquid hic et soluta cumque maiores dicta illo! Debitis, molestias? Impedit.</p>
+            <p>Next to the intersection of Boston st, and Laurel st./Myrtle st. Directly next to Family Corner Grocery II. If you went up the hill, you just passed it! <br> <br>
+               Nearby landmarks include: &nbsp Sacred Heart Church, &nbsp Barry Park, &nbsp and &nbsp Lincoln Thompson School. </p>
             </div>
         </div>
    </section>
@@ -113,8 +122,9 @@
       <header>
         <h2 class="section-title">Contact Us</h2>
       </header>
-      <p>Feel free to inquire with us, we respond to all messages during normal business hours.</p>
-      <p><em>Fields marked with an asterisk (*) are required</em></p>
+      <p style="font-size: 24px;"> <u>Phone number: 781-599-8877</u> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  <u>Email: VasquezServices@pm.me</u> <br> <br></p>
+      <p>Feel free to inquire with us, we respond to all messages during normal business hours. 
+      <br> <br><em>Fields marked with an asterisk (*) are required</em></p>
     <div class="form-container">
       <form id="contact-form" name="contact" data-name="Contact Form"  method="GET" action="VSformresults.html">
         <div class="contact-form-grid">
@@ -142,12 +152,6 @@
         <input type="submit" value="Submit" data-wait="Please wait..." class="submit-button">
         <input type="reset" value="Reset" class="reset-button">
       </form>
-      <div class="contact-form-done">
-        <div> Thank you! Your submission has been recieved!</div>
-      </div>
-      <div class="contact-form-fail">
-        <div>Something went wrong while submitting the form. Please try again.</div>
-      </div>
     </div>
           <!--<input type="text" class="contact-input" maxlength="256" name="" data-name="" id="" required=""></div> -->
    </section>
