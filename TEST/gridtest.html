@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .serv-grid{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-auto-rows: minmax(100px, auto);
+            grid-gap: 1em;
+            justify-items: stretch; /* stretch is default for grid */
+            align-items: stretch;
+        }
+        .serv-grid > div{
+            background: #eee;
+            padding: 1em;
+        }
+        .serv-grid > div:nth-child(odd){
+            background:#ddd;
+        }
+        .serv1{
+            grid-column: 1/3;
+
+        }            
+        .serv2{
+        
+
+        }
+        .serv3{
+        
+
+        }
+        .serv4{
+            grid-column: 1/3;
+
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="serv-grid">
+        <div class="service serv1">Service 1</div>
+        <div class="service serv2">Service 2</div>
+        <div class="service serv3">Service 3</div>
+        <div class="service serv4">Service 4</div>
+    </div>
+</body>
+</html>

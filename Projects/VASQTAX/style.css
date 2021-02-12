@@ -73,7 +73,7 @@ h2 {
 
 p {
     padding: 5px;
-    text-align: left;
+    text-align: center;
 }
 
                                         /* Navigation bar*/
@@ -294,6 +294,7 @@ footer p {
 .hero-p {
     padding: 0 5vw 0 5vw;
     text-indent: 1.5em;
+    text-align: left;
 }
 @media only screen and (min-width: 500px){
     .hero-title{
@@ -500,6 +501,9 @@ footer p {
 
                     /* Contact Us */
 
+.contact-details{
+    display: flex;
+}
 #contact p {margin:auto; text-align: center;}
 
 #contact-form {
@@ -530,3 +534,9 @@ input, textarea {
     color: black;
 }
 
+
+    /* TEMPORARY STYLES*/
+
+.wip{
+    font-size: 100px;
+}
