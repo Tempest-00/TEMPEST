@@ -111,13 +111,16 @@ nav ul li a{
     font-size: 17px;
     text-transform:capitalize;
     border-radius: 3px;
-    padding: 10px 10px;
+    padding: 28px 20px;
     font-weight: 600;
 }
  nav a:active, nav a:hover {
     background: var(--clr-primary);
     color:white;
     transition: .3s;
+}
+.filebutton{
+    min-width: 150px;
 }
 .checkbtn{
     font-size: 30px;
@@ -503,6 +506,9 @@ footer p {
 
 .contact-details{
     display: flex;
+    font-size: larger;
+    max-width: 900px;
+    margin: auto;
 }
 #contact p {margin:auto; text-align: center;}
 
@@ -522,6 +528,9 @@ input, textarea {
     width: 100%;
     margin: 0.2rem auto;
 }
+textarea{
+    resize: vertical;
+}
 #contact-block {
     padding: 5px;
 }
@@ -530,10 +539,57 @@ input, textarea {
     font-weight: 800;
     font-size: inherit;
     border-radius: 5px;
-    border: 3px solid var(--clr-primary);
+    border: 2px solid silver;
+    background-color: var(--clr-primary);
+    color: ivory;
+    max-width: 300px;
+    margin-bottom: 10px;
+}
+.submit-button:hover, .reset-button:hover{
+    background-color: var(--clr-hover);
+    color: black;
+    transition: 0.3s ease;
+}
+#status{
+    font-size: x-large;
+    font-weight: 600;
+    width: 900px;
+    text-align: center;
+    padding: 10px;
+    margin: 0 auto;
+    border-radius: 8px;
     color: black;
 }
+#status.success{
+    background-color: var(--clr-accent2);
+    border: 6px solid var(--clr-accent);
+    animation: status 4s ease forwards;
+}
+#status.error{
+    background-color: #dd2a2a;
+    border: 6px solid var(--clr-accent2);
+    animation: status 4s ease forwards;
+}
+@keyframes status{
+    0%{
+        opacity: 1;
+        pointer-events: all;
+    }
+    90%{
+        opacity: 1;
+        pointer-events: all;
+    }
+    100%{
+        opacity: 0;
+        pointer-events: none;
+    }
+}
 
+@media only screen and (max-width: 750px){
+    .contact-details{
+        flex-direction: column;
+    }
+}
 
     /* TEMPORARY STYLES*/
 
