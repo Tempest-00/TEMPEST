@@ -260,7 +260,7 @@ footer p {
 .hero {
     display: flex;
     background-color: var(--clr-primary);
-    background-image: url(/Projects/VASQTAX/imgs/diamonds.jpg);
+    background-image: url(/imgs/diamonds.jpg);
     background-blend-mode: multiply;
     background-attachment: fixed;
     background-size: cover;
@@ -439,7 +439,7 @@ footer p {
 
 .about-us {
     background: var(--clr-back);
-    background-image: url(/Projects/VASQTAX/imgs/Horses.jpg);
+    background-image: url(/imgs/Horses.jpg);
     background-blend-mode: multiply;
     background-attachment: fixed;
     background-size: cover;
